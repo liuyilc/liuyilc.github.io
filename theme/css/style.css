@@ -1,0 +1,640 @@
+
+.figure, .center-block {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.caption {
+    font-size: 80%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: none
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: ''
+}
+
+.hidden {
+    display: none
+}
+
+/**
+ * https://material.io/icons/
+ */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../fonts/material-icons/MaterialIcons-Regular.woff) format('woff'),
+    url(../fonts/material-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/*end of google material icons*/
+
+
+
+body, html {
+    height: 100%
+}
+
+body {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 18px;
+}
+
+.profile #wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 40px 0
+}
+
+.profile #header {
+    position: relative;
+    padding-bottom: 40px;
+    text-align: center
+}
+
+.profile #avatar {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee
+}
+
+.profile h1 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #222
+}
+
+.profile h2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #aaa
+}
+
+nav.main-nav {
+    z-index: 100;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+    text-align: right;
+    background: rgba(255, 255, 255, .9)
+}
+
+nav.main-nav a {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.35;
+    top: 8px;
+    right: 6px;
+    padding: 8px 12px;
+    color: #bbb;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+nav.main-nav a.cta {
+    margin-left: 12px;
+    color: #fff;
+    background: #5badf0
+}
+
+#wrapper, .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 40px 100px;
+}
+
+
+a {
+    /*text-decoration: none;*/
+    color: #000000;
+}
+
+
+ul, ol {
+    margin: 0 0 20px;
+    padding-left: 20px;
+}
+
+li {
+    list-style-position: inside;
+    line-height: 1.5;
+    /*list-style-type: circle;*/
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+b, strong {
+    font-weight: 500;
+    color: #1e2025
+}
+
+em, i {
+    font-style: italic
+}
+
+
+.description {
+    font: italic 14px/1.4em Georgia, serif;
+    float: right;
+    color: #aaa
+}
+
+.post header {
+    text-align: center
+}
+
+.post h2.headline {
+    display: inline-block;
+    margin: -5px 0 54px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b2b9be;
+    font-size:14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+    color: #666666;
+}
+
+
+p.small {
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #bbb
+}
+
+blockquote {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: 4px solid #dfe2e5;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif;
+}
+
+blockquote p {
+    line-height: 1.5;
+}
+
+.tip {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 20px;
+    border-left: 3px solid rgba(240, 90, 90, .22)
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    margin: 40px auto;
+    border: none;
+    background: #eee
+}
+
+span.code {
+    font-family: Menlo, Monaco, Courier;
+    font-size: 14px;
+    background-color: #eee
+}
+
+pre {
+    font-family: 'Source Code Pro', Menlo, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+    overflow: auto;
+    padding: 20px;
+    white-space: pre-wrap;
+    color: #d0d4d7;
+    border-radius: 3px;
+    background: #fdfdfd
+}
+
+table {
+    border-spacing: 0;
+    font-size: 13px;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse
+}
+
+td, th {
+    padding-right: 20px;
+    text-align: left;
+    vertical-align: top
+}
+
+table td, td {
+    padding: 10px 15px;
+    border-spacing: unset;
+    border-width: 1px 0 0;
+    border-style: solid
+}
+
+tr > td {
+    border-top: 1px solid #eaeaea
+}
+
+tr:nth-child(odd) > td {
+    background: #fcfcfc
+}
+
+th, thead th {
+    font-size: 13px;
+    font-weight: 700;
+    height: 20px;
+    padding: 10px 15px;
+    cursor: default;
+    text-align: left;
+    white-space: nowrap;
+    color: #444;
+    border-bottom: 1px solid #dadadc
+}
+
+img {
+    max-width: 90%;
+    display: block;
+    box-shadow: 0 0 10px #555;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 10px #555;
+}
+
+
+#archive-list {
+    margin-top: 100px
+}
+
+#post-list {
+    margin-bottom: 0
+}
+
+#archive-list li, #post-list li {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    border-top: 1px solid #eee
+}
+
+#post-list li:last-child {
+    border-bottom: 1px solid #eee
+}
+
+
+#post-list a {
+    display: block;
+    color: #666666;
+    text-decoration: none;
+
+}
+
+#post-list .dates {
+    position: relative;
+    top: 1px;
+    float: right;
+    color: #bbb
+}
+
+.footer, .footer a {
+    padding: 40px 0 0;
+    text-align: center;
+    color: #888;
+    font-size: 40%;
+    display:none;
+}
+/*
+.post, .profile {
+    margin: 80px 0 0
+}*/
+
+
+#sharing a:hover {
+    opacity: .8
+}
+
+#post-nav {
+    font-size: 85%;
+    font-weight: 500;
+    margin-top: 80px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+
+#post-nav span.prev {
+    float: left
+}
+
+#post-nav span.next {
+    float: right
+}
+
+#post-nav span .arrow {
+    position: relative;
+    padding: 1px
+}
+
+h1.archive {
+    margin-bottom: 0
+}
+
+h2.month {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee
+}
+
+#archive-list li:last-child {
+    margin-bottom: 0
+}
+
+
+@media screen and (max-width: 540px) {
+    blockquote {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #wrapper, .wrapper {
+        padding: 20px
+    }
+
+    .post {
+        margin: 40px 0
+    }
+
+    #archive-list, #post-list {
+        margin-top: 0
+    }
+
+    #post-meta {
+        margin-top: 60px
+    }
+
+    #title {
+        font-size: 17px
+    }
+
+    #post-list .dates {
+        display: none
+    }
+
+    #post-list-footer {
+        margin-top: 20px;
+        padding-top: 40px
+    }
+
+    h1 {
+        font-size: 26px
+    }
+
+    .post h2.headline {
+        font-size: 13px
+    }
+
+    .post h1 {
+        font-size: 24px
+    }
+
+    .post h2 {
+        font-size: 20px
+    }
+
+    .mob-hidden {
+        display: none;
+    }
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+a.symbol {
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-decoration: none;
+    color: #cdd4da
+}
+
+a.symbol:hover {
+    color: #bcd4da
+}
+
+code {
+    font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
+    font-size: 85%;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+}
+pre code {
+    padding: 0
+}
+
+.readmore {
+    margin-top: 50px
+}
+
+#post-body h3 a, #post-body h4 a, #post-body h5 a {
+    color: #333
+}
+
+#page-links {
+    margin: 20px 10px;
+    padding-left: 0 !important
+}
+
+#page-links li {
+    display: inline-block;
+    width: 280px;
+    height: 150px;
+    margin-bottom: 40px;
+    list-style: none;
+    text-align: center
+}
+
+#page-links img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee
+}
+
+#page-links a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #333
+}
+
+#page-links span {
+    font-weight: 300;
+    display: block
+}
+
+@media screen and (max-width: 660px) {
+    #page-links {
+        display: block;
+        width: 280px;
+        margin: 20px auto !important
+    }
+
+    blockquote {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+    }
+}
+
+
+
+.footnote li {
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+.footnote li p {
+    margin: 0;
+}
+
+.iframevideo {
+    width: 100%;
+    height: 450px;
+}
+
+.ias-noneleft {
+    margin-top: 10px;
+}
+
+.list-category p {
+    margin-bottom: 0px;
+}
+
+.tag-list a {
+    color: rgba(0, 0, 0, 0.44);
+    background-color: #fcfcfc;
+    border-radius: 2px;
+    border: 1px solid #f0f0f0;
+    padding: 3px 5px;
+    margin: 4px 8px 4px 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+sup {
+    top: -0.5em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.list-content {
+    margin-top: 35px;
+}
+
+.footnote-backref {
+    display: none;
+}
+
+.footnote{
+    margin-top: 50px;
+}
+.footnote hr{
+    display: none;
+}
+
+.footnote ol{
+    margin-top: 10px;
+}
+
+
+.footnote:before{
+    content: "References";
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
